@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Information</title>
 </head>
+
 <body>
-    <h1> personal information</h1>
-           <form>
+
+    <h1>Personal Information</h1>
+
+    <form action="#" method="post">
+
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+        >
+        <br><br>
+
         <label for="subscribe">Subscribe to newsletter:</label>
         <input type="checkbox" id="subscribe" name="subscribe">
-   
-       <h2>personal intersts</h2>
-         <input type="radio" id="red" name="color" value="red">
-          <label for="red">Red</label><br>
-          <input type="radio" id="blue" name="color" value="blue">
-          <label for="blue">Blue</label><br>
-          <input type="radio" id="green" name="color" value="green">
-          <label for="green">Green</label><br>
-          <input type="radio" id="yellow" name="color" value="yellow">
-          <label for="yellow">Yellow</label><br>
-          <input type="radio" id="orange" name="color" value="orange">
-          <label for="orange">Orange</label><br>
-          <input type="radio" id="purple" name="color" value="purple">
-          <label for="purple">Purple</label><br>
-         <button type="submit">Submit</button>
 
-            </form>
+        <h2>Personal Interests</h2>
 
+        <p>Choose your interests:</p>
 
+        <label>
+            <input type="checkbox" name="interest" value="information-technology">
+            Information Technology
+        </label><br>
 
+        <label>
+            <input type="checkbox" name="interest" value="information-security">
+            Information Security
+        </label><br>
 
-    
+        <label>
+            <input type="checkbox" name="interest" value="information-management">
+            Information Management
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="interest" value="information-networking">
+            Information Networking
+        </label>
+
+        <h2>Event Survey</h2>
+
+        <p></p>Choose how you would like to attend:</p>
+
+        <label>
+            <input type="radio" name="attendance" value="personal management" required>
+           personal management
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" name="attendance" value="time management" required>
+            Time Management
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
 </body>
 </html>
