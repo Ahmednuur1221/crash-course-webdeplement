@@ -4,69 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Feedback Form</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            font-size: 16px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        fieldset {
-            padding: 15px;
-        }
-
-        .radio-group {
-            display: flex;
-            gap: 20px;
-        }
-
-        .radio-group label {
-            font-weight: normal;
-        }
-
-        .error {
-            color: #b00020;
-            font-size: 14px;
-        }
-
-        button {
-            padding: 12px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        input:focus,
-        textarea:focus,
-        button:focus {
-            outline: 3px solid #005fcc;
-            outline-offset: 2px;
-        }
-    </style>
 </head>
 
 <body>
 
     <main>
+
         <h1>Website Feedback Form</h1>
 
         <p>
@@ -76,124 +19,76 @@
         <form action="#" method="post">
 
             <!-- Name -->
-            <div>
-                <label for="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    autocomplete="name"
-                    aria-describedby="name-help"
-                >
+            <label for="name">Name:</label>
+            
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Please enter your full name."
+            >
+     
+            <small id="name-help">
+              
+            </small>
 
-                <small id="name-help">
-                    Please enter your full name.
-                </small>
-            </div>
-
+            <br><br>
 
             <!-- Email -->
-            <div>
-                <label for="email">Email Address</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    autocomplete="email"
-                    aria-describedby="email-help"
-                >
+            <label for="email">Email:</label>
+       
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="inter your email"
+            >
+            <br>
+            <small id="email-help">
+              
+            </small>
 
-                <small id="email-help">
-                    Enter a valid email address, for example:
-                    example@email.com
-                </small>
-            </div>
-
+            <br><br>
 
             <!-- Satisfaction Rating -->
             <fieldset>
-                <legend>How satisfied are you with our website?</legend>
 
-                <div class="radio-group">
+                <legend>
+                    How satisfied are you with our website?
+                </legend>
+            <input type="radio" name="satisfaction" value="Excellent"> Excellent
+            <input type="radio" name="satisfaction" value="Very Good"> Very Good
+            <input type="radio" name="satisfaction" value="Good"> Good
+            <input type="radio" name="satisfaction" value="Fair"> Fair
+            <input type="radio" name="satisfaction" value="Needs Improvement"> Needs Improvement        
 
-                    <label>
-                        <input
-                            type="radio"
-                            name="satisfaction"
-                            value="very-satisfied"
-                            required
-                        >
-                        Very Satisfied
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="satisfaction"
-                            value="satisfied"
-                        >
-                        Satisfied
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="satisfaction"
-                            value="neutral"
-                        >
-                        Neutral
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="satisfaction"
-                            value="dissatisfied"
-                        >
-                        Dissatisfied
-                    </label>
-
-                    <label>
-                        <input
-                            type="radio"
-                            name="satisfaction"
-                            value="very-dissatisfied"
-                        >
-                        Very Dissatisfied
-                    </label>
-
-                </div>
             </fieldset>
 
+            <br>
 
             <!-- Comments -->
-            <div>
-                <label for="comments">Comments</label>
-
-                <textarea
-                    id="comments"
-                    name="comments"
-                    rows="6"
-                    required
-                    minlength="10"
-                    maxlength="500"
-                    aria-describedby="comments-help"
-                ></textarea>
-
-                <small id="comments-help">
-                    Please enter at least 10 characters.
-                </small>
-            </div>
-
-
+            <label for="comments">Comments</label>
+            <br>
+            <textarea
+                id="comments"
+                name="comments"
+                rows="6"
+                required
+                minlength="10"
+                maxlength="50"
+               placeholder=" Please enter at least 10 characters."
+            ></textarea>
+           
+            <br>
             <!-- Submit -->
             <button type="submit">
                 Submit Feedback
             </button>
 
         </form>
+
     </main>
 
 </body>
