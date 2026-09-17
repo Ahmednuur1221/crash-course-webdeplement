@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    height: 600px;
+    padding-bottom: 40px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 20px;
+}

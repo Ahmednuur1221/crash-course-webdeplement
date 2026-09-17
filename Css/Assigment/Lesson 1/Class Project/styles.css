@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgb(230, 211, 248);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.logo {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.navbar {
+  display: inline-block;
+  width: 69%;
+  text-align: right;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.navbar a {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: bottom;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image:url('./images/hero');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  position: relative;
+  width: 560px;
+  height: 400px;
+  color: rgb(255, 255, 255);
+  padding-left: 100px;
+  padding-top: 250px;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  line-height: 1;
+  margin-bottom: 25px;
+  font-weight: bolder;
+  
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+
+.about-section {
+  width: 100%;
+}
+
+.about-content {
+  color: rgb(11, 28, 62);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 50%;
+  padding-left: 20px;
+  padding-top: 70px;
+}
+
+.subtitle {
+  color: blue;
+}
+
+.description {
+  color: rgb(75, 85, 99);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.learn-btn {
+  color: rgb(11, 28, 62);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.about-image {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-top: 45px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+
+
+.testimonials {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #f7f9fc;
+}
+
+
+
+.testimonial-heading span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(108, 76, 232);
+}
+
+.testimonial-heading h2 {
+    margin: 0;
+    font-size: 38px;
+    color: rgb(34, 34, 34);
+}
+
+.testimonial-heading p {
+    margin: 12px 0 40px;
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+}
+
+
+
+.testimonial-container {
+    text-align: center;
+}
+
+
+
+.profile-card {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 280px;
+    min-height: 390px;
+
+    margin: 12px;
+    padding: 30px 25px;
+
+    background-color: white;
+
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.student-image {
+    margin-bottom: 18px;
+}
+
+.student-image img {
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid rgb(240, 236, 255);
+}
+
+
+
+.profile-card h3 {
+    margin: 12px 0 7px;
+
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+}
+
+
+
+.profile-card .department {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    color: rgb(108, 76, 232);
+}
+
+
+
+.profile-card blockquote {
+    margin: 18px 0 0;
+
+    padding: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: rgb(102, 102, 102);
+}
+
+
+.footer {
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    padding: 30px 15px;
+    font-size: 17px;
+}
+
+.footer p {
+  text-align: center;
+}
