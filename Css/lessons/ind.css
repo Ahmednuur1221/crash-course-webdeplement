@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px;
+    gap: 5px;
+}
+.container div {
+    background-color:red;
+    padding: 20px;
+}
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: -webkit-image-set(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKsvJmK6poNBJvHpR9OrjUpkeniZjhr6OgvHDVud94g&s=10);
+.item2 {
+
+    
+}
