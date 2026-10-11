@@ -1,0 +1,11 @@
+console.log("welcome ahmed hassan ali");
+let name = "ahmed hassan ali";
+console.log(name);
+let one = 10; 
+let three = 6; 
+console.log(one + three); 
+var myname = "ahmed hassan ali";
+console.log(myname);
+var two = 19;
+var four = 88;
+console.log(two + four);
